@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+:root {
+    --principal: #B2ECE1;
+    --secondary: #000000;
+    --third: #ffffff;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*,
+* ::before,
+* ::after {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    min-height: 100vh;
+    grid-template-areas: 
+    "header"
+    "section1"
+    "section2"
+    "footer";
+}
+
+header {
+    margin-top: 10px;
+    background-color: var(--principal);
+    grid-area: header;
+}
+
+header .navbar {
+    min-height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo {
+    flex-basis: 30%;
+}
+
+header .logo img {
+    height: 70px;
+}
+
+header .menu {
+    flex-basis: 20%;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu {
+    list-style: none;
+}
+
+header .li {
+    border: 2px solid var(--principal);
+}
+
+.menu .li:hover {
+    border-color: var(--third);
+}
+
+.menu .li a {
+    color: var(--secondary);
+    font-size: 1.8em;
+    padding: 1rem;
+}
+
+.section {
+    gap: 2rem;
+    align-items: center;
+    padding: 0 2rem;
+    justify-content: center;
+    grid-area: section1;
+}
+
+.article {
+text-align: center;
+}
+
+picture {
+    padding: 1.5rem;
+}
+
+section div h2 {
+    background-color: var(--principal);
+    margin: 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.a {
+    color: var(--secondary);
+}
+
+.barrios {
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+.barrios h2 {
+    grid-column:  11 / 14;
+    grid-row: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.div {
+    margin-top: 10px;
+}
+
+.imagen {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ul {
+    text-align: center;
+    display: inline-block;
+    margin-top: 125px;
+    list-style: none;
+    background-color: var(--principal);
+    width: 90%;
+    margin-left: 55px;
+}
+
+.bares {
+    padding: 1rem 2rem 1rem;
+    text-align: center;
+}
+
+.bares img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.cultura {
+    padding: 1rem 2rem 1rem;
+    text-align: center;
+}
+
+.cultura img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.comida {
+    padding: 1rem 2rem 1rem;
+    text-align: center;
+}
+
+.comida img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+section div h3 {
+    margin: 2rem 6rem 2rem;
+    background-color: var(--principal);
+}
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    height: 150px;
+}
+
+.footer {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 10px;
+    min-height: 15vh;
+    background-color: var(--principal);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.footer img {
+    border-radius: 10px;
+    height: 30px;
+}
+
+
+/* Helpers */
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+	.menu {
+            font-size: .8em;
+      }
+
+    header .navbar {
+          min-height: 10vh;
+      }
+    
+    header .logo {
+          flex-basis: 20%;
+      }
+    
+      header .logo img {
+        height: 50px;
+    }
+    
+    .section {
+        flex-direction: column;
+    }
+
+    .article {
+        margin-top: 2rem;
+    }
+    
+    .section picture .imagen {
+        height: auto;
+        align-items: center;
+    }
+
+    section div {
+        flex-direction: column;
+    }
+
+    section div h3 {
+        margin: 1rem 7rem 1rem;
+    }
+
+    .bares {
+        padding: 1rem 2rem 1rem;
+        text-align: center;
+    }
+    
+    .cultura {
+        padding: 1rem 2rem 1rem;
+        text-align: center;
+    }
+
+    .comida {
+        padding: 1rem 2rem 1rem;
+        text-align: center;
+    }
+
+    section div .bares img {
+        display: none;
+    }
+
+    section div .cultura img {
+        display: none;
+    }
+
+    section div .comida img {
+        display: none;
+    }
+
+}
+
