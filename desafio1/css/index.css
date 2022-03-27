@@ -94,10 +94,16 @@ picture {
     padding: 1.5rem;
 }
 
-section div h2 {
+.section2 div h2 {
     background-color: var(--principal);
     margin: 1rem 1rem 1rem;
     text-align: center;
+}
+
+section div h2 {
+    margin: 1rem 1rem 1rem;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 .a {
@@ -193,6 +199,17 @@ section div h3 {
     height: 30px;
 }
 
+.disfruta_barrios {
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    margin: 0.5rem;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.disfruta_barrios:hover {
+    opacity: 25%;
+}
 
 /* Helpers */
 
