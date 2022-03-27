@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivamos Buenos Aires</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +25,7 @@
     </header>
 
     <section class="section flex-row container">
-        <article class="article">
+        <article class="article" data-aos="fade-down">
             <h2>Quienes somos?</h2>
             <div class="div">
                 <p>
@@ -34,7 +36,7 @@
                 </p>
             </div>
         </article>
-        <picture>
+        <picture data-aos="flip-down">
             <img class="imagen" src="./multimedia/buenos_aires.jpg" alt="Buenos Aires">
         </picture>
     </section>
@@ -46,17 +48,17 @@
     
         <div class="flex-row container">
             <div class="bares">
-                <img src="./multimedia/bares.jpg" alt="bares">
+                <img src="./multimedia/bares.jpg" alt="bares" data-aos="flip-down">
                 <h3><a class="a" href="./secciones/bares.html" target="_blank">Bares</a></h3>       
             </div>
 
             <div class="cultura">
-                <img src="./multimedia/cultura.jpg" alt="cultura">
+                <img src="./multimedia/cultura.jpg" alt="cultura" data-aos="flip-down">
                 <h3><a class="a" href="./secciones/cultura.html" target="_blank">Cultura</a></h3>
             </div>
 
             <div class="comida">
-                <img src="./multimedia/comida.jpg" alt="comida">
+                <img src="./multimedia/comida.jpg" alt="comida" data-aos="flip-down">
                 <h3><a class="a" href="./secciones/comidas.html" target="_blank">Comidas</a></h3>
             </div> 
         </div>
@@ -73,6 +75,11 @@
             <img src="./multimedia/youtube.png" alt="youtube" height="20px">
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
 
 </body>
 
