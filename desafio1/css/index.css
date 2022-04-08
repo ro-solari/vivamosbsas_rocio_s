@@ -182,6 +182,7 @@ section div h3 {
     margin: 2rem 6rem 2rem;
     background-color: var(--principal);
 }
+
 .imagenes {
     display: flex;
     justify-content: space-around;
@@ -212,6 +213,14 @@ section div h3 {
     transition: opacity 0.5s ease-in-out;
 }
 
+.comidas{
+    transition: 0.5s ease-in-out;
+}
+
+.comidas:hover{
+    color: var(--third);
+}
+
 .disfruta_barrios:hover {
     opacity: 25%;
 }
@@ -236,6 +245,9 @@ section div h3 {
     margin: 0.5rem;
 }
 
+.form{
+    height: 100vh;
+}
 
 /* Helpers */
 

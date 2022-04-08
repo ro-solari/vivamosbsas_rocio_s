@@ -24,25 +24,30 @@
     </header>
 
     <main class="container">
-        <form action="" method="post" style="height: 450px;">
-            <h2>Escribinos!</h2>
+        <section class="row">
+            <form class="col-lg-6" action="" method="post">
+            <h2 class="fs-1 fw-bolder">Escribinos!</h2>
             <div class="mb-3 form-control-lg">
-                <label class="form-label" for="NombreApellido">Ingrese su nombre y apellido</label>
-                <input class="form-control" type="text" name="NombreApellido" id="NombreApellido">
+                    <label class="form-label" for="NombreApellido">Ingrese su nombre y apellido</label>
+                    <input class="form-control" type="text" name="NombreApellido" id="NombreApellido">
+                </div>
+                <div class="mb-3 form-control-lg">
+                    <label class="form-label" for="email">Ingrese su e-mail</label>
+                    <input class="form-control" placeholder="e-mail@example.com" type="email" name="email" id="email">
+                </div>
+                <div class="mb-3 form-control-lg">
+                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu consulta</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-control-lg">
+                    <button type="submit" class="btn btn-lg btn-outline-dark">Enviar</button>
+                    <button type="reset" class="btn btn-lg btn-outline-dark">Borrar</button>
+                </div>
+            </form>
+            <div class="col-lg-6">
+                <img class="img-fluid imagen" src="../multimedia/obelisco-buenos-aires.jpg" alt="">
             </div>
-            <div class="mb-3 form-control-lg">
-                <label class="form-label" for="email">Ingrese su e-mail</label>
-                <input class="form-control" placeholder="e-mail@example.com" type="email" name="email" id="email">
-            </div>
-            <div class="mb-3 form-control-lg">
-                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu consulta</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="form-control-lg">
-                <button type="submit" class="btn btn-lg btn-outline-dark">Enviar</button>
-                <button type="reset" class="btn btn-lg btn-outline-dark">Borrar</button>
-            </div>
-        </form>
+        </section>
     </main>
 
     <footer class="footer">
