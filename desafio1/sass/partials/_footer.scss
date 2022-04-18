@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 10px;
+    min-height: 15vh;
+    background-color: $principal;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    img {
+        border-radius: 10px;
+        height: 30px;
+    }
+}

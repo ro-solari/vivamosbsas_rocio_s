@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+@import './misc/animations';
+
+@import './partials/footer';
+@import './partials/header';
+
+@import './views/home';
+@import './views/contactanos'

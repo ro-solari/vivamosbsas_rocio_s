@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+html {
+  font-size: 62.5%; }
+
+*,
+* ::before,
+* ::after {
+  font-family: 'Fredoka', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  grid-template-areas: "header" "section1" "section2" "footer"; }
+
+.flex-row {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto; }
+
+.footer {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 10px;
+  min-height: 15vh;
+  background-color: #B2ECE1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem; }
+  .footer img {
+    border-radius: 10px;
+    height: 30px; }
+
+header {
+  margin-top: 10px;
+  background-color: #B2ECE1;
+  grid-area: header; }
+  header .navbar {
+    min-height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; }
+  header .logo {
+    flex-basis: 30%; }
+    header .logo img {
+      height: 70px; }
+  header a {
+    text-decoration: none;
+    display: inline-block; }
+  header .menu {
+    flex-basis: 20%;
+    justify-content: space-between;
+    list-style: none; }
+    header .menu opciones a {
+      color: #000000;
+      font-size: 1.8em;
+      padding: 1rem; }
+      header .menu opciones a:hover {
+        border-color: #ffffff;
+        transition: 0.5s ease-in-out; }
+  header opciones {
+    border: 2px solid #B2ECE1; }
+
+.section {
+  gap: 2rem;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: center;
+  grid-area: section1; }
+
+.article {
+  text-align: center; }
+
+.bares {
+  padding: 1rem 2rem 1rem;
+  text-align: center; }
+  .bares img {
+    border-radius: 10px;
+    width: 100%; }
+
+.cultura {
+  padding: 1rem 2rem 1rem;
+  text-align: center; }
+  .cultura img {
+    border-radius: 10px;
+    width: 100%; }
+
+.comida {
+  padding: 1rem 2rem 1rem;
+  text-align: center; }
+  .comida img {
+    border-radius: 10px;
+    width: 100%; }

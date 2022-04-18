@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap'); */
 
-:root {
+/* :root {
     --principal: #B2ECE1;
     --secondary: #000000;
     --third: #ffffff;
-}
+} */
 
-html{
+/* html{
     font-size: 62.5%;
 }
 
@@ -27,11 +27,11 @@ body {
     "section1"
     "section2"
     "footer";
-}
+} */
 
-header {
+/* header {
     margin-top: 10px;
-    background-color: var(--principal);
+    background-color: $principal;
     grid-area: header;
 }
 
@@ -53,33 +53,33 @@ header .logo img {
 header .menu {
     flex-basis: 20%;
     justify-content: space-between;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
     display: inline-block;
 }
 
 .menu {
     list-style: none;
-}
+} */
 
-header .li {
-    border: 2px solid var(--principal);
-}
+/* header opciones {
+    border: 2px solid $principal;
+} */
 
-.menu .li:hover {
-    border-color: var(--third);
+/* .menu opciones:hover {
+    border-color: $third;
     transition: 0.5s ease-in-out;
 }
 
-.menu .li a {
-    color: var(--secondary);
+.menu opciones a {
+    color: $secondary;
     font-size: 1.8em;
     padding: 1rem;
-}
+} */
 
-.section {
+/* .section {
     gap: 2rem;
     align-items: center;
     padding: 0 2rem;
@@ -89,14 +89,14 @@ header .li {
 
 .article {
 text-align: center;
-}
+} */
 
 picture {
     padding: 1.5rem;
 }
 
 .section2 div h2 {
-    background-color: var(--principal);
+    background-color: --principal;
     margin: 1rem 1rem 1rem;
     text-align: center;
 }
@@ -108,12 +108,12 @@ section div h2 {
 }
 
 .a {
-    color: var(--secondary);
+    color: --secondary;
     transition: 0.5s ease-in-out;
 }
 
 .a:hover{
-    color: var(--third);
+    color: --third;
 }
 
 .barrios {
@@ -143,12 +143,12 @@ section div h2 {
     display: inline-block;
     margin-top: 125px;
     list-style: none;
-    background-color: var(--principal);
+    background-color: --principal;
     width: 90%;
     margin-left: 55px;
 }
 
-.bares {
+/* .bares {
     padding: 1rem 2rem 1rem;
     text-align: center;
 }
@@ -176,11 +176,11 @@ section div h2 {
 .comida img {
     border-radius: 10px;
     width: 100%;
-}
+} */
 
 section div h3 {
     margin: 2rem 6rem 2rem;
-    background-color: var(--principal);
+    background-color: --principal;
 }
 
 .imagenes {
@@ -190,12 +190,12 @@ section div h3 {
     height: 150px;
 }
 
-.footer {
+/* .footer {
     display: flex;
     font-size: 16px;
     margin-bottom: 10px;
     min-height: 15vh;
-    background-color: var(--principal);
+    background-color: $principal;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
@@ -204,7 +204,7 @@ section div h3 {
 .footer img {
     border-radius: 10px;
     height: 30px;
-}
+} */
 
 .disfruta_barrios {
     width: 100%;
@@ -218,7 +218,7 @@ section div h3 {
 }
 
 .comidas:hover{
-    color: var(--third);
+    color: --third;
 }
 
 .disfruta_barrios:hover {
@@ -251,7 +251,7 @@ section div h3 {
 
 /* Helpers */
 
-.flex-row {
+/* .flex-row {
     display: flex;
 }
 
@@ -263,7 +263,7 @@ section div h3 {
 .container {
     max-width: 1080px;
     margin: 0 auto;
-}
+} */
 
 @media screen and (max-width: 768px) {
 	.menu {
