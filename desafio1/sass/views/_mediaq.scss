@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+	.menu {
+            font-size: .8em;
+      }
+
+    header .navbar {
+          min-height: 10vh;
+      }
+    
+    header .logo {
+          flex-basis: 20%;
+      }
+    
+      header .logo img {
+        height: 50px;
+    }
+    
+    .section {
+        flex-direction: column;
+    }
+
+    .article {
+        margin-top: 2rem;
+    }
+    
+    .section picture .imagen {
+        height: auto;
+        align-items: center;
+    }
+
+    section div {
+        flex-direction: column;
+    }
+
+    section div h3 {
+        margin: 1rem 7rem 1rem;
+    }
+
+    .bares {
+        padding: 1rem 2rem 1rem;
+        text-align: center;
+    }
+    
+    .cultura {
+        padding: 1rem 2rem 1rem;
+        text-align: center;
+    }
+
+    .comida {
+        padding: 1rem 2rem 1rem;
+        text-align: center;
+    }
+
+    section div .bares img {
+        display: none;
+    }
+
+    section div .cultura img {
+        display: none;
+    }
+
+    section div .comida img {
+        display: none;
+    }
+
+}

@@ -91,11 +91,11 @@ header .menu {
 text-align: center;
 } */
 
-picture {
+/* picture {
     padding: 1.5rem;
-}
+} */
 
-.section2 div h2 {
+/* .section2 div h2 {
     background-color: --principal;
     margin: 1rem 1rem 1rem;
     text-align: center;
@@ -114,9 +114,9 @@ section div h2 {
 
 .a:hover{
     color: --third;
-}
+} */
 
-.barrios {
+/* .barrios {
     display: grid;
     grid-template-columns: repeat(23, 1fr);
     grid-template-rows: repeat(15, 1fr);
@@ -127,9 +127,9 @@ section div h2 {
     grid-row: 1;
     text-align: center;
     padding: 1rem;
-}
+} */
 
-.div {
+/* .div {
     margin-top: 10px;
 }
 
@@ -146,7 +146,7 @@ section div h2 {
     background-color: --principal;
     width: 90%;
     margin-left: 55px;
-}
+} */
 
 /* .bares {
     padding: 1rem 2rem 1rem;
@@ -178,17 +178,17 @@ section div h2 {
     width: 100%;
 } */
 
-section div h3 {
+/* section div h3 {
     margin: 2rem 6rem 2rem;
     background-color: --principal;
-}
+} */
 
-.imagenes {
+/* CREO QUE NO LO USO .imagenes {
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
     height: 150px;
-}
+} */
 
 /* .footer {
     display: flex;
@@ -206,7 +206,7 @@ section div h3 {
     height: 30px;
 } */
 
-.disfruta_barrios {
+/* .disfruta_barrios {
     width: 100%;
     border-radius: 5px;
     margin: 0.5rem;
@@ -223,16 +223,16 @@ section div h3 {
 
 .disfruta_barrios:hover {
     opacity: 25%;
-}
+} */
 
-.info{
+/* .info{
     font-size: 30px;
     text-align: center;
     margin-left: 15px;
     margin-top: -120px;
-}
+} */
 
-.bar {
+/* .bar {
     width: 100%;
     border-radius: 10px;
     justify-content: left;
@@ -243,11 +243,11 @@ section div h3 {
     border-radius: 10px;
     justify-content: end;
     margin: 0.5rem;
-}
+} */
 
-.form{
+/* .form{
     height: 100vh;
-}
+} */
 
 /* Helpers */
 
@@ -265,7 +265,8 @@ section div h3 {
     margin: 0 auto;
 } */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
+
 	.menu {
             font-size: .8em;
       }
@@ -330,4 +331,4 @@ section div h3 {
         display: none;
     }
 
-}
+} */

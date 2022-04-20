@@ -1,0 +1,30 @@
+.barrios {
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+
+    h2 {
+        grid-column: 11 / 14;
+        grid-row: 1;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+.disfruta_barrios {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0.5rem;
+    transition: opacity 0.5s ease-in-out;
+
+    &:hover {
+        opacity: 25%;
+    }
+}
+
+.info{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: -120px;
+}
