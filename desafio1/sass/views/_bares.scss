@@ -6,8 +6,23 @@
 }
 
 .bar2 {
-    width: 100%;
-    border-radius: 10px;
+    @extend .bar;
     justify-content: end;
-    margin: 0.5rem;
+}
+
+.bares-div {
+@include flex();
+margin-top: 10px;
+}
+
+div.col-lg-6 {
+    padding: map-get($paddings, m);
+}
+
+.titles {
+    background-color: $principal;
+}
+
+.right-div{
+    @include flex($direction: row-reverse);
 }

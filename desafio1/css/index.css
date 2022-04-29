@@ -1,9 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap'); */
 
 /* :root {
-    --principal: #B2ECE1;
-    --secondary: #000000;
-    --third: #ffffff;
+    $principal: #B2ECE1;
+    $secondary: #000000;
+    $third: #ffffff;
 } */
 
 /* html{
@@ -96,7 +96,7 @@ text-align: center;
 } */
 
 /* .section2 div h2 {
-    background-color: --principal;
+    background-color: $principal;
     margin: 1rem 1rem 1rem;
     text-align: center;
 }
@@ -108,12 +108,12 @@ section div h2 {
 }
 
 .a {
-    color: --secondary;
+    color: $secondary;
     transition: 0.5s ease-in-out;
 }
 
 .a:hover{
-    color: --third;
+    color: $third;
 } */
 
 /* .barrios {
@@ -143,7 +143,7 @@ section div h2 {
     display: inline-block;
     margin-top: 125px;
     list-style: none;
-    background-color: --principal;
+    background-color: $principal;
     width: 90%;
     margin-left: 55px;
 } */
@@ -180,7 +180,7 @@ section div h2 {
 
 /* section div h3 {
     margin: 2rem 6rem 2rem;
-    background-color: --principal;
+    background-color: $principal;
 } */
 
 /* CREO QUE NO LO USO .imagenes {
@@ -218,7 +218,7 @@ section div h2 {
 }
 
 .comidas:hover{
-    color: --third;
+    color: $third;
 }
 
 .disfruta_barrios:hover {

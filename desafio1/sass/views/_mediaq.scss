@@ -37,17 +37,17 @@
     }
 
     .bares {
-        padding: 1rem 2rem 1rem;
+        padding: map-get($paddings, section-padding);
         text-align: center;
     }
     
     .cultura {
-        padding: 1rem 2rem 1rem;
+        padding: map-get($paddings, section-padding);
         text-align: center;
     }
 
     .comida {
-        padding: 1rem 2rem 1rem;
+        padding: map-get($paddings, section-padding);
         text-align: center;
     }
 

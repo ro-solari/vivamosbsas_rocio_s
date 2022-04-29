@@ -2,3 +2,19 @@
 $principal: #B2ECE1;
 $secondary: #000000;
 $third: #ffffff;
+
+$paddings: (
+xs: 0.5rem,
+s: 1rem,
+m: 1.5rem,
+l: 2rem,
+xl: 2.5rem,
+special-padding: 0 2rem,
+section-padding: 1rem 2rem 1rem
+);
+
+@each $var, $val in $paddings {
+    .padding-#{$var} {
+        padding: #{$val};        
+    }
+}

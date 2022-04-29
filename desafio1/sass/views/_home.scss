@@ -1,8 +1,6 @@
 .section {
-    gap: 2rem;
-    align-items: center;
-    padding: 0 2rem;
-    justify-content: center;
+    @include flex(row, center, center, 2rem);
+    padding: map-get($paddings, special-padding);
     grid-area: section1;
 }
 
@@ -11,7 +9,7 @@
 }
 
 picture {
-    padding: 1.5rem;
+    padding: map-get($paddings, m);
 }
 
 section {
@@ -28,35 +26,44 @@ section {
 .section2 {
     div {
         h2 {
-            background-color: --principal;
+            @include flex($justify: center, $align: center);
+            background-color: $principal;
             margin: 1rem 1rem 1rem;
-            text-align: center;
         }
     }
 }
 
-section div h3 {
+section {
+    div.container {
+        @include flex(row, space-between, center, 0);
+    }
+}
+
+section {
     div {
         h3 {
+            @include flex(row, center, center, 0);
             margin: 2rem 6rem 2rem;
-            background-color: --principal;
+            background-color: $principal;
         }
     }
 }
 
 .a {
-    color: --secondary;
+    color: $secondary;
     transition: 0.5s ease-in-out;
+    text-decoration: none;
+    padding: map-get($paddings, xs);
 
     &:hover {
-        color: --third;
+        color: $third;
     }
 }
 
 .bares {
-    padding: 1rem 2rem 1rem;
+    padding: map-get($paddings, section-padding);
     text-align: center;
-
+    
     img {
         border-radius: 10px;
         width: 100%;
@@ -64,9 +71,9 @@ section div h3 {
 }
 
 .cultura {
-    padding: 1rem 2rem 1rem;
+    padding: map-get($paddings, section-padding);
     text-align: center;
-
+    
     img {
         border-radius: 10px;
         width: 100%;
@@ -74,9 +81,9 @@ section div h3 {
 }
 
 .comida {
-    padding: 1rem 2rem 1rem;
+    padding: map-get($paddings, section-padding);
     text-align: center;
-
+    
     img {
         border-radius: 10px;
         width: 100%;
@@ -97,7 +104,7 @@ section div h3 {
     display: inline-block;
     margin-top: 125px;
     list-style: none;
-    background-color: --principal;
+    background-color: $principal;
     width: 90%;
     margin-left: 55px;
 }

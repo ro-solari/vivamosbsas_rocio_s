@@ -1,7 +1,8 @@
 .comidas{
     transition: 0.5s ease-in-out;
+    padding: map-get($paddings, xs);
 
     &:hover {
-        color: --third;
+        color: $third;
     }
 }

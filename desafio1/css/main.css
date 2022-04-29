@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+.padding-xs {
+  padding: 0.5rem; }
+
+.padding-s {
+  padding: 1rem; }
+
+.padding-m {
+  padding: 1.5rem; }
+
+.padding-l {
+  padding: 2rem; }
+
+.padding-xl {
+  padding: 2.5rem; }
+
+.padding-special-padding {
+  padding: 0 2rem; }
+
+.padding-section-padding {
+  padding: 1rem 2rem 1rem; }
+
 html {
   font-size: 62.5%; }
 
@@ -13,13 +34,6 @@ html {
 body {
   min-height: 100vh;
   grid-template-areas: "header" "section1" "section2" "footer"; }
-
-.flex-row {
-  display: flex; }
-
-.flex-column {
-  display: flex;
-  flex-direction: column; }
 
 .container {
   max-width: 1080px;
@@ -43,9 +57,12 @@ header {
   background-color: #B2ECE1;
   grid-area: header; }
   header .navbar {
-    min-height: 15vh;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+    min-height: 15vh;
     padding: 0 2rem; }
   header .logo {
     flex-basis: 30%; }
@@ -56,23 +73,29 @@ header {
     display: inline-block; }
   header .menu {
     flex-basis: 20%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
     list-style: none; }
-    header .menu opciones a {
+    header .menu .opciones a {
       color: #000000;
       font-size: 1.8em;
       padding: 1rem; }
-      header .menu opciones a:hover {
-        border-color: #ffffff;
-        transition: 0.5s ease-in-out; }
-  header opciones {
+  header .opciones {
     border: 2px solid #B2ECE1; }
+    header .opciones:hover {
+      border-color: #ffffff;
+      transition: 0.5s ease-in-out; }
 
 .section {
-  gap: 2rem;
-  align-items: center;
-  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
   grid-area: section1; }
 
 .article {
@@ -87,19 +110,37 @@ section div h2 {
   font-size: 2.5rem; }
 
 .section2 div h2 {
-  background-color: --principal;
-  margin: 1rem 1rem 1rem;
-  text-align: center; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #B2ECE1;
+  margin: 1rem 1rem 1rem; }
 
-section div h3 div h3 {
+section div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0; }
+
+section div h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   margin: 2rem 6rem 2rem;
-  background-color: --principal; }
+  background-color: #B2ECE1; }
 
 .a {
-  color: --secondary;
-  transition: 0.5s ease-in-out; }
+  color: #000000;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+  padding: 0.5rem; }
   .a:hover {
-    color: --third; }
+    color: #ffffff; }
 
 .bares {
   padding: 1rem 2rem 1rem;
@@ -134,9 +175,108 @@ section div h3 div h3 {
   display: inline-block;
   margin-top: 125px;
   list-style: none;
-  background-color: --principal;
+  background-color: #B2ECE1;
   width: 90%;
   margin-left: 55px; }
 
 .form {
   height: 100vh; }
+
+main section.row {
+  margin: 6rem 0; }
+
+.bar, .bar2 {
+  width: 100%;
+  border-radius: 10px;
+  justify-content: left;
+  margin: 0.5rem; }
+
+.bar2 {
+  justify-content: end; }
+
+.bares-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 10px; }
+
+div.col-lg-6 {
+  padding: 1.5rem; }
+
+.titles {
+  background-color: #B2ECE1; }
+
+.right-div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0; }
+
+.barrios {
+  display: grid;
+  grid-template-columns: repeat(23, 1fr);
+  grid-template-rows: repeat(15, 1fr); }
+  .barrios h2 {
+    grid-column: 11 / 14;
+    grid-row: 1;
+    text-align: center;
+    padding: 1rem; }
+
+.disfruta_barrios {
+  width: 100%;
+  border-radius: 5px;
+  margin: 0.5rem;
+  transition: opacity 0.5s ease-in-out; }
+  .disfruta_barrios:hover {
+    opacity: 25%; }
+
+.info {
+  font-size: 30px;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: -120px; }
+
+.comidas {
+  transition: 0.5s ease-in-out;
+  padding: 0.5rem; }
+  .comidas:hover {
+    color: #ffffff; }
+
+@media screen and (max-width: 768px) {
+  .menu {
+    font-size: .8em; }
+  header .navbar {
+    min-height: 10vh; }
+  header .logo {
+    flex-basis: 20%; }
+  header .logo img {
+    height: 50px; }
+  .section {
+    flex-direction: column; }
+  .article {
+    margin-top: 2rem; }
+  .section picture .imagen {
+    height: auto;
+    align-items: center; }
+  section div {
+    flex-direction: column; }
+  section div h3 {
+    margin: 1rem 7rem 1rem; }
+  .bares {
+    padding: 1rem 2rem 1rem;
+    text-align: center; }
+  .cultura {
+    padding: 1rem 2rem 1rem;
+    text-align: center; }
+  .comida {
+    padding: 1rem 2rem 1rem;
+    text-align: center; }
+  section div .bares img {
+    display: none; }
+  section div .cultura img {
+    display: none; }
+  section div .comida img {
+    display: none; } }
