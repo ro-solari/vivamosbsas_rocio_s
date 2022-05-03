@@ -206,7 +206,8 @@ div.col-lg-6 {
   padding: 1.5rem; }
 
 .titles {
-  background-color: #B2ECE1; }
+  background-color: #B2ECE1;
+  margin-top: 70px; }
 
 .right-div {
   display: flex;
@@ -248,6 +249,8 @@ div.col-lg-6 {
 @media screen and (max-width: 768px) {
   .menu {
     font-size: .8em; }
+  .a {
+    font-size: 1.6rem; }
   header .menu {
     gap: 0rem; }
   header .navbar {
@@ -263,11 +266,20 @@ div.col-lg-6 {
     margin-top: 2rem; }
   .section picture .imagen {
     height: auto;
-    align-items: center; }
+    align-items: center;
+    margin-top: -2rem; }
   section div {
     flex-direction: column; }
   section div h3 {
     margin: 1rem 7rem 1rem; }
+  .section2 div h2 {
+    display: flex;
+    flex-direction: column; }
+  section div.container {
+    display: flex;
+    flex-direction: column; }
+  main section.row {
+    margin: 2rem 0; }
   .bares {
     padding: 1rem 2rem 1rem;
     text-align: center; }
@@ -282,4 +294,14 @@ div.col-lg-6 {
   section div .cultura img {
     display: none; }
   section div .comida img {
-    display: none; } }
+    display: none; }
+  .bares-div {
+    display: flex;
+    flex-direction: column; }
+    .bares-div p {
+      margin-top: 4px; }
+  .right-div {
+    display: flex;
+    flex-direction: column; }
+    .right-div p {
+      margin-top: 4px; } }

@@ -3,6 +3,10 @@
             font-size: .8em;
       }
     
+    .a {
+        font-size: 1.6rem;
+    }
+    
     header .menu {
         gap: 0rem;
     }
@@ -31,6 +35,7 @@
     .section picture .imagen {
         height: auto;
         align-items: center;
+        margin-top: -2rem;
     }
 
     section div {
@@ -39,6 +44,20 @@
 
     section div h3 {
         margin: 1rem 7rem 1rem;
+    }
+
+    .section2 div h2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section div.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.row {
+        margin: 2rem 0;
     }
 
     .bares {
@@ -66,6 +85,24 @@
 
     section div .comida img {
         display: none;
+    }
+
+    .bares-div {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin-top: 4px;
+        }
+    }
+
+    .right-div {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin-top: 4px;
+        }
     }
 
 }
