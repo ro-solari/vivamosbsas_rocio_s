@@ -248,8 +248,11 @@ div.col-lg-6 {
 @media screen and (max-width: 768px) {
   .menu {
     font-size: .8em; }
+  header .menu {
+    gap: 0rem; }
   header .navbar {
-    min-height: 10vh; }
+    min-height: 10vh;
+    gap: 0rem; }
   header .logo {
     flex-basis: 20%; }
   header .logo img {
