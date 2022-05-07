@@ -64,9 +64,6 @@ header {
     gap: 2rem;
     min-height: 15vh;
     padding: 0 2rem; }
-  header .links {
-    font-size: 0.9rem;
-    margin-bottom: -2rem; }
   header .logo {
     flex-basis: 30%; }
     header .logo img {
@@ -87,23 +84,13 @@ header {
       color: #000000;
       font-size: 1.8em;
       padding: 1rem; }
-  header .submenu {
-    display: none;
-    position: absolute;
-    width: 120%; }
-    header .submenu li a {
-      display: block; }
-  header .menu li:hover .submenu {
-    display: block;
-    transition: 0.5s ease-in-out;
-    margin-top: 2rem;
-    margin-left: -3rem;
-    list-style: none; }
   header .opciones {
     border: 2px solid #B2ECE1; }
     header .opciones:hover {
       border-color: #ffffff;
       transition: 0.5s ease-in-out; }
+  header .checkbtn, header #check {
+    display: none; }
 
 .section {
   display: flex;
@@ -267,8 +254,13 @@ main section.row {
     font-size: .8em; }
   .a {
     font-size: 1.6rem; }
+  .menu_icon {
+    display: flex;
+    justify-content: right;
+    width: 30px;
+    height: 30px; }
   header .menu {
-    gap: 0rem; }
+    display: none; }
   header .navbar {
     min-height: 10vh;
     gap: 0rem; }
@@ -276,6 +268,24 @@ main section.row {
     flex-basis: 20%; }
   header .logo img {
     height: 50px; }
+  #check:checked ~ ul {
+    display: block;
+    left: 0; }
+  header .checkbtn {
+    display: block; }
+  ul.menu {
+    background-color: #B2ECE1;
+    position: fixed;
+    top: 90px;
+    height: 18vh;
+    right: 0px;
+    z-index: 10; }
+  li.opciones {
+    background-color: #B2ECE1;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 0; }
   .section {
     flex-direction: column; }
   .article {

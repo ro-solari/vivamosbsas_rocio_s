@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+
     .menu {
         font-size: .8em;
     }
@@ -7,8 +8,15 @@
         font-size: 1.6rem;
     }
 
+    .menu_icon {
+        display: flex;
+        justify-content: right;
+        width: 30px;
+        height: 30px;
+    }
+
     header .menu {
-        gap: 0rem;
+        display: none;
     }
 
     header .navbar {
@@ -23,6 +31,34 @@
     header .logo img {
         height: 50px;
     }
+
+    #check:checked ~ ul{
+        display: block;
+        left: 0;
+
+    }
+    
+    header .checkbtn {
+        display: block;
+    }
+
+    ul.menu{
+        background-color: #B2ECE1;
+        position: fixed;
+        top: 90px;
+        height: 18vh;
+        right: 0px;
+        z-index: 10;
+    }
+
+    li.opciones{
+        background-color: $principal;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
 
     .section {
         flex-direction: column;
