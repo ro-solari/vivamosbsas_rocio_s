@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
 .padding-xs {
   padding: 0.5rem; }
@@ -217,7 +218,7 @@ div.bares-div div.col-lg-9 {
   display: grid;
   grid-template-columns: repeat(23, 1fr);
   grid-template-rows: repeat(15, 1fr); }
-  .barrios h2 {
+  .barrios .barrio {
     grid-column: 11 / 14;
     grid-row: 1;
     text-align: center;
@@ -231,11 +232,96 @@ div.bares-div div.col-lg-9 {
   .disfruta_barrios:hover {
     opacity: 25%; }
 
-.info {
-  font-size: 30px;
-  text-align: center;
-  margin-left: 15px;
-  margin-top: -120px; }
+.almagro, .balvanera, .barracas, .belgrano, .boedo, .caballito, .chacarita, .flores, .floresta, .la_boca, .paternal, .liniers, .nuñez, .palermo, .recoleta, .saavedra, .villa_devoto, .versalles {
+  color: black;
+  position: absolute;
+  top: 48%;
+  left: 12.5%;
+  display: none; }
+
+.balvanera {
+  left: 24.5%; }
+
+.barracas {
+  left: 38%; }
+
+.belgrano {
+  left: 51.2%; }
+
+.boedo {
+  left: 66.5%; }
+
+.caballito {
+  left: 77.5%; }
+
+.chacarita, .flores, .floresta, .la_boca, .paternal, .liniers {
+  top: 82%;
+  left: 11.7%; }
+
+.flores {
+  left: 26.5%; }
+
+.floresta {
+  left: 38.5%; }
+
+.la_boca {
+  left: 52.5%; }
+
+.paternal {
+  left: 65%; }
+
+.liniers {
+  left: 79.5%; }
+
+.nuñez, .palermo, .recoleta, .saavedra, .villa_devoto, .versalles {
+  top: 115%;
+  left: 4.5%; }
+
+.palermo {
+  left: 19.5%; }
+
+.recoleta {
+  left: 35.5%; }
+
+.saavedra {
+  left: 51.5%; }
+
+.villa_devoto {
+  left: 68.5%; }
+
+.versalles {
+  left: 84%; }
+
+.barrio_s:hover .almagro, .barrio_s:hover .balvanera, .barrio_s:hover .barracas, .barrio_s:hover .belgrano, .barrio_s:hover .boedo, .barrio_s:hover .caballito, .barrio_s:hover .chacarita, .barrio_s:hover .flores, .barrio_s:hover .floresta, .barrio_s:hover .la_boca, .barrio_s:hover .paternal, .barrio_s:hover .liniers, .barrio_s:hover .nuñez, .barrio_s:hover .palermo, .barrio_s:hover .recoleta, .barrio_s:hover .saavedra, .barrio_s:hover .villa_devoto, .barrio_s:hover .versalles,
+.barrio_s:hover .balvanera,
+.barrio_s:hover .barracas,
+.barrio_s:hover .barrio,
+.barrio_s:hover .belgrano,
+.barrio_s:hover .boedo,
+.barrio_s:hover .caballito,
+.barrio_s:hover .chacarita,
+.barrio_s:hover .flores,
+.barrio_s:hover .floresta,
+.barrio_s:hover .la_boca,
+.barrio_s:hover .paternal,
+.barrio_s:hover .liniers,
+.barrio_s:hover .flores,
+.barrio_s:hover .floresta,
+.barrio_s:hover .la_boca,
+.barrio_s:hover .paternal,
+.barrio_s:hover .liniers,
+.barrio_s:hover .nuñez,
+.barrio_s:hover .palermo,
+.barrio_s:hover .recoleta,
+.barrio_s:hover .saavedra,
+.barrio_s:hover .villa_devoto,
+.barrio_s:hover .versalles,
+.barrio_s:hover .palermo,
+.barrio_s:hover .recoleta,
+.barrio_s:hover .saavedra,
+.barrio_s:hover .versalles,
+.barrio_s:hover .villa_devoto {
+  display: block; }
 
 .comidas {
   transition: 0.5s ease-in-out;
@@ -277,7 +363,6 @@ main section.row {
     background-color: #B2ECE1;
     position: fixed;
     top: 90px;
-    height: 18vh;
     right: 0px;
     z-index: 10; }
   li.opciones {

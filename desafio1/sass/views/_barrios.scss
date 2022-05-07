@@ -3,7 +3,7 @@
     grid-template-columns: repeat(23, 1fr);
     grid-template-rows: repeat(15, 1fr);
 
-    h2 {
+    .barrio {
         grid-column: 11 / 14;
         grid-row: 1;
         text-align: center;
@@ -22,9 +22,121 @@
     }
 }
 
-.info{
-    font-size: 30px;
-    text-align: center;
-    margin-left: 15px;
-    margin-top: -120px;
+.almagro {
+    color: black;
+    position: absolute;
+    top: 48%;
+    left: 12.5%;
+    display: none;
+
+}
+
+.balvanera {
+    @extend .almagro;
+    left: 24.5%;
+}
+
+.barracas {
+    @extend .almagro;
+    left: 38%;
+}
+
+.belgrano {
+    @extend .almagro;
+    left: 51.2%;
+}
+
+.boedo {
+    @extend .almagro;
+    left: 66.5%;
+}
+
+.caballito {
+    @extend .almagro;
+    left: 77.5%;
+}
+
+.chacarita {
+    @extend .almagro;
+    top: 82%;
+    left: 11.7%;
+}
+
+.flores {
+    @extend .chacarita;
+    left: 26.5%;
+}
+
+.floresta {
+    @extend .chacarita;
+    left: 38.5%;
+}
+
+.la_boca {
+    @extend .chacarita;
+    left: 52.5%;
+}
+
+.paternal {
+    @extend .chacarita;
+    left: 65%;
+}
+
+.liniers {
+    @extend .chacarita;
+    left: 79.5%;
+}
+
+.nuñez {
+    @extend .almagro;
+    top: 115%;
+    left: 4.5%
+}
+
+.palermo {
+    @extend .nuñez;
+    left: 19.5%
+}
+
+.recoleta {
+    @extend .nuñez;
+    left: 35.5%
+}
+
+.saavedra {
+    @extend .nuñez;
+    left: 51.5%
+}
+
+.villa_devoto {
+    @extend .nuñez;
+    left: 68.5%
+}
+
+.versalles {
+    @extend .nuñez;
+    left: 84%
+}
+
+.barrio_s:hover .almagro,
+.barrio_s:hover .balvanera,
+.barrio_s:hover .barracas,
+.barrio_s:hover .barrio,
+.barrio_s:hover .belgrano,
+.barrio_s:hover .boedo,
+.barrio_s:hover .caballito,
+.barrio_s:hover .chacarita,
+.barrio_s:hover .flores,
+.barrio_s:hover .floresta,
+.barrio_s:hover .la_boca,
+.barrio_s:hover .paternal,
+.barrio_s:hover .liniers,
+.barrio_s:hover .nuñez,
+.barrio_s:hover .palermo,
+.barrio_s:hover .recoleta,
+.barrio_s:hover .saavedra,
+.barrio_s:hover .versalles,
+.barrio_s:hover .villa_devoto
+ {
+    display: block;
 }
