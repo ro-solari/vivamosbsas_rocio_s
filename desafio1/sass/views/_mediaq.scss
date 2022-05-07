@@ -1,29 +1,29 @@
 @media screen and (max-width: 768px) {
-	.menu {
-            font-size: .8em;
-      }
-    
+    .menu {
+        font-size: .8em;
+    }
+
     .a {
         font-size: 1.6rem;
     }
-    
+
     header .menu {
         gap: 0rem;
     }
 
     header .navbar {
-          min-height: 10vh;
-          gap: 0rem;
-      }
-    
+        min-height: 10vh;
+        gap: 0rem;
+    }
+
     header .logo {
-          flex-basis: 20%;
-      }
-    
-      header .logo img {
+        flex-basis: 20%;
+    }
+
+    header .logo img {
         height: 50px;
     }
-    
+
     .section {
         flex-direction: column;
     }
@@ -31,7 +31,7 @@
     .article {
         margin-top: 2rem;
     }
-    
+
     .section picture .imagen {
         height: auto;
         align-items: center;
@@ -64,7 +64,7 @@
         padding: map-get($paddings, section-padding);
         text-align: center;
     }
-    
+
     .cultura {
         padding: map-get($paddings, section-padding);
         text-align: center;
@@ -76,15 +76,18 @@
     }
 
     section div .bares img {
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
 
     section div .cultura img {
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
 
     section div .comida img {
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .bares-div {

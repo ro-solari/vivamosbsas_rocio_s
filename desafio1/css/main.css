@@ -64,6 +64,9 @@ header {
     gap: 2rem;
     min-height: 15vh;
     padding: 0 2rem; }
+  header .links {
+    font-size: 0.9rem;
+    margin-bottom: -2rem; }
   header .logo {
     flex-basis: 30%; }
     header .logo img {
@@ -78,11 +81,24 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    list-style: none; }
+    list-style: none;
+    position: relative; }
     header .menu .opciones a {
       color: #000000;
       font-size: 1.8em;
       padding: 1rem; }
+  header .submenu {
+    display: none;
+    position: absolute;
+    width: 120%; }
+    header .submenu li a {
+      display: block; }
+  header .menu li:hover .submenu {
+    display: block;
+    transition: 0.5s ease-in-out;
+    margin-top: 2rem;
+    margin-left: -3rem;
+    list-style: none; }
   header .opciones {
     border: 2px solid #B2ECE1; }
     header .opciones:hover {
@@ -179,12 +195,6 @@ section div h3 {
   width: 90%;
   margin-left: 55px; }
 
-.form {
-  height: 100vh; }
-
-main section.row {
-  margin: 6rem 0; }
-
 .bar, .bar2 {
   width: 100%;
   border-radius: 10px;
@@ -192,7 +202,7 @@ main section.row {
   margin: 0.5rem; }
 
 .bar2 {
-  justify-content: end; }
+  justify-content: right; }
 
 .bares-div {
   display: flex;
@@ -202,7 +212,7 @@ main section.row {
   gap: 0;
   margin-top: 10px; }
 
-div.col-lg-6 {
+div.bares-div div.col-lg-9 {
   padding: 1.5rem; }
 
 .titles {
@@ -245,6 +255,12 @@ div.col-lg-6 {
   padding: 0.5rem; }
   .comidas:hover {
     color: #ffffff; }
+
+.form {
+  height: 100vh; }
+
+main section.row {
+  margin: 6rem 0; }
 
 @media screen and (max-width: 768px) {
   .menu {
@@ -290,11 +306,14 @@ div.col-lg-6 {
     padding: 1rem 2rem 1rem;
     text-align: center; }
   section div .bares img {
-    display: none; }
+    display: flex;
+    flex-direction: column; }
   section div .cultura img {
-    display: none; }
+    display: flex;
+    flex-direction: column; }
   section div .comida img {
-    display: none; }
+    display: flex;
+    flex-direction: column; }
   .bares-div {
     display: flex;
     flex-direction: column; }
